@@ -10,7 +10,7 @@ public class Runigram {
 		//// Hide / change / add to the testing code below, as needed.
 		
 		// Tests the reading and printing of an image:	
-		Color[][] tinypic = read("ironman.ppm");
+		Color[][] image = read("ironman.ppm");
 		//print(tinypic);
 
 		// Creates an image which will be the result of various 
@@ -18,11 +18,11 @@ public class Runigram {
 		Color[][] imageOut;
 
 		// Tests the horizontal flipping of an image:
-		imageOut = flippedHorizontally(tinypic);
+		imageOut = flippedHorizontally(image);
 		//System.out.println();
 		//print(imageOut);
-		setCanvas(tinypic);
-		display(tinypic);
+		setCanvas(image);
+		display(image);
 		StdDraw.pause(3000);
 		display(imageOut);
 
